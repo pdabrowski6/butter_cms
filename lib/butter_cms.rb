@@ -9,6 +9,8 @@ module ButterCMS
   def self.configure
     self.configuration ||= ::ButterCMS::Configuration.new
 
-    yield(configuration)
+    yield(configuration) if block_given?
   end
 end
+
+ButterCMS.configure unless ButterCMS.configuration
