@@ -1,6 +1,7 @@
 require 'butter_cms/configuration'
 require 'butter_cms/url_params_service'
 require 'butter_cms/requests/api'
+require 'butter_cms/requests/get'
 
 module ButterCMS
   class << self
