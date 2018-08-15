@@ -1,3 +1,7 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'butter_cms/version'
+
 Gem::Specification.new do |s|
   s.name        = 'butter_cms_v2'
   s.date        = '2018-08-15'
@@ -6,5 +10,6 @@ Gem::Specification.new do |s|
   s.email       = 'dziamber@gmail.com'
   s.homepage    =
     'http://github.com/rubyhero/butter_cms'
-  s.license       = 'MIT'
+  s.license     = 'MIT'
+  s.version     = ButterCMS::Version
 end
