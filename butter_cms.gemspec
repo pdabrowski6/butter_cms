@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.version     = ButterCMS::Version
   s.add_development_dependency "rspec", '~> 3.7', '>= 3.7.0'
   s.files       = Dir['spec/helper.rb', 'lib/**/*.rb']
+  s.add_runtime_dependency 'rest-client', '~> 2.0'
 end
