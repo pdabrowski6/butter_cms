@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
     'http://github.com/rubyhero/butter_cms'
   s.license     = 'MIT'
   s.version     = ButterCMS::Version
+  s.add_development_dependency "rspec", '~> 3.7', '>= 3.7.0'
 end
