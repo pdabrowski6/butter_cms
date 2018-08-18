@@ -2,6 +2,7 @@ require 'butter_cms/configuration'
 require 'butter_cms/url_params_service'
 require 'butter_cms/requests/api'
 require 'butter_cms/requests/get'
+require 'butter_cms/parsers/posts'
 
 module ButterCMS
   class << self
