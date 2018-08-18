@@ -6,6 +6,8 @@ require 'butter_cms/parsers/posts'
 require 'butter_cms/resource'
 require 'butter_cms/author'
 require 'butter_cms/parsers/author_object'
+require 'butter_cms/category'
+require 'butter_cms/parsers/categories_objects'
 
 module ButterCMS
   class << self
