@@ -12,6 +12,7 @@ require 'butter_cms/tag'
 require 'butter_cms/parsers/tags_objects'
 require 'butter_cms/post'
 require 'butter_cms/parsers/post_object'
+require 'butter_cms/posts_fetch_service'
 
 module ButterCMS
   class << self
