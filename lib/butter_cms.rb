@@ -10,6 +10,8 @@ require 'butter_cms/category'
 require 'butter_cms/parsers/categories_objects'
 require 'butter_cms/tag'
 require 'butter_cms/parsers/tags_objects'
+require 'butter_cms/post'
+require 'butter_cms/parsers/post_object'
 
 module ButterCMS
   class << self
