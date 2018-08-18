@@ -8,6 +8,8 @@ require 'butter_cms/author'
 require 'butter_cms/parsers/author_object'
 require 'butter_cms/category'
 require 'butter_cms/parsers/categories_objects'
+require 'butter_cms/tag'
+require 'butter_cms/parsers/tags_objects'
 
 module ButterCMS
   class << self
