@@ -4,6 +4,8 @@ require 'butter_cms/requests/api'
 require 'butter_cms/requests/get'
 require 'butter_cms/parsers/posts'
 require 'butter_cms/resource'
+require 'butter_cms/author'
+require 'butter_cms/parsers/author_object'
 
 module ButterCMS
   class << self
