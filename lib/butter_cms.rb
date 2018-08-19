@@ -19,6 +19,9 @@ module ButterCMS
     attr_accessor :configuration
   end
 
+  # Returns the configuration class instance if block given
+  #
+  # @return [ButterCMS::Configuration]
   def self.configure
     self.configuration ||= ::ButterCMS::Configuration.new
 
