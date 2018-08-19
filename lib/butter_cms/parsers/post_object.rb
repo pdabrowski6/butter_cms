@@ -1,7 +1,9 @@
 module ButterCMS
   module Parsers
     class PostObject
-
+      # Returns the new instance of post with the associations included
+      #
+      # @return [ButterCMS::Post]
       def self.call(post_attributes)
         updated_post_attributes = {
           'tags' => ::ButterCMS::Parsers::TagsObjects.call(post_attributes.delete('tags')),
