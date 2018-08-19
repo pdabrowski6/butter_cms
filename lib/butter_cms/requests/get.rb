@@ -4,6 +4,9 @@ module ButterCMS
   module Requests
     class Get
 
+      # Returns response from the request to the given API endpoint
+      #
+      # @return [RestClient::Response]
       def self.call(path, options = {})
         full_url = [
           ::ButterCMS::Requests::API::URL,
