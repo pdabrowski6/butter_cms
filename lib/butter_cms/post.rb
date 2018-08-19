@@ -1,6 +1,9 @@
 module ButterCMS
   class Post < ButterCMS::Resource
 
+    # Returns all available posts from the API
+    #
+    # @return [Array<ButterCMS::Post>]
     def self.all
       posts = []
       request_options = { page_size: 10, page: 0 }
