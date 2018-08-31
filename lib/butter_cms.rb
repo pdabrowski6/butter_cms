@@ -14,6 +14,7 @@ require 'butter_cms/post'
 require 'butter_cms/parsers/post_object'
 require 'butter_cms/posts_fetch_service'
 require 'butter_cms/parsers/categories'
+require 'butter_cms/parsers/post'
 
 module ButterCMS
   class << self
