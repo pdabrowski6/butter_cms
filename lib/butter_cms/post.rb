@@ -1,9 +1,9 @@
 module ButterCMS
   class Post < ButterCMS::Resource
-
-    # Returns all available posts from the API
+    class RecordNotFound < StandardError; end
+    # Returns post for given slug if available otherwise raises error RecordNotFound
     #
-    # @return [Array<ButterCMS::Post>]
+    # @return [ButterCMS::Post]
     def self.all
       posts = []
       request_options = { page_size: 10, page: 0 }
@@ -17,6 +17,17 @@ module ButterCMS
       end
 
       posts
+    end
+
+    # Returns all available posts from the API
+    #
+    # @return [ButterCMS::Post]
+    def self.find(slug)
+      response = ::ButterCMS::Requests::Get.call("posts/#{slug}")
+      post_attributes = ::ButterCMS::Parsers::Post.new(response).post
+      ::ButterCMS::Parsers::PostObject.call(post_attributes)
+    rescue RestClient::NotFound
+      raise RecordNotFound
     end
 
   end
